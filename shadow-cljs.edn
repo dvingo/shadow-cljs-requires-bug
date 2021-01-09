@@ -1,0 +1,12 @@
+{:source-paths ["src"]
+ :dependencies []
+ :builds
+ {:main
+  {:target     :browser
+   :output-dir "out/js/main"
+   :asset-path "/js/main"
+   :modules    {:main {:init-fn corp.sample.entry/init
+                       :entries [corp.sample.entry]}}
+   :devtools   {:http-port          8044
+                ; :http-resource-root "out"
+                :http-root          "out"}}}}
